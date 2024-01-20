@@ -23,6 +23,7 @@ document.querySelector("#print-developers").addEventListener("click", () => {
   // Print Developers
 
   // Filtering out developer objects and printing them in tabular form.
+  console.clear();
   console.log("Here are all the developer objects:");
   arr.forEach((element) => {
     element.profession === "developer" && console.table(element);
@@ -52,6 +53,7 @@ document.querySelector("#add-new-data").addEventListener("click", () => {
   });
 
   // Printing the last element of 'arr' in tabular form as the added element is at the end.
+  console.clear();
   console.log("New data has been added, and here is the new object:");
   console.table(arr[arr.length - 1]);
 });
@@ -75,6 +77,7 @@ document.querySelector("#remove-admins").addEventListener("click", () => {
   }
 
   // Printing each object in tabular form.
+  console.clear();
   console.log("All administrators have been removed.");
   consoleArr();
 });
@@ -106,6 +109,7 @@ document.querySelector("#concatenate-array").addEventListener("click", (e) => {
 
   // Adding each element of 'newArr' to 'arr' using the push method.
   newArr.forEach((e) => arr.push(e));
+  console.clear();
   console.log("Array has been concatenated.");
   consoleArr();
 });
