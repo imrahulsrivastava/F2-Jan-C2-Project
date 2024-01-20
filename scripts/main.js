@@ -24,9 +24,9 @@ document.querySelector("#print-developers").addEventListener("click", () => {
 
   // Filtering out developer objects and printing them in tabular form.
   console.log("Here are all the developer objects:");
-  arr
-    .filter((element) => element.profession === "developer")
-    .forEach((element) => console.table(element));
+  arr.forEach((element) => {
+    element.profession === "developer" && console.table(element);
+  });
 });
 
 document.querySelector("#add-new-data").addEventListener("click", () => {
